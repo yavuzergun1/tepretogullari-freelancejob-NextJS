@@ -6,10 +6,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cards";
 
-import "./styles.css";
-
-// import required modules
 import { EffectCards } from "swiper";
+import Image from "next/image";
 
 export default function App() {
   return (
@@ -20,7 +18,9 @@ export default function App() {
         modules={[EffectCards]}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide>
+          <Image width={500} height={300} src="/images/slider 1.jpg"/>
+        </SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
