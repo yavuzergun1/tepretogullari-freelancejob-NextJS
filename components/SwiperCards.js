@@ -10,7 +10,8 @@ import "swiper/css/pagination";
 import { EffectCards, Autoplay, A11y, Pagination } from "swiper";
 import Image from "next/image";
 
-export default function App() {
+export default function App({ photos }) {
+  console.log(photos);
   return (
     <>
       <Swiper

@@ -6,7 +6,7 @@ import { getPhotosData } from "../components/FirebaseUtils";
 
 export default function Home({ data }) {
   console.log(data);
-  const photos = Object.values(data.slidephotos)
+  const photos = Object.values(data.slidephotos);
   console.log(photos);
   return (
     <>
@@ -17,17 +17,7 @@ export default function Home({ data }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <Swiper />
-
-        {
-          photos.map((photo) => {
-            return (
-              <div>
-                {photo  }
-              </div>
-            )
-          })
-        }
+        <Swiper photos={photos} />
       </main>
     </>
   );
