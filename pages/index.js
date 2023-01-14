@@ -1,10 +1,13 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Swiper from '../components/SwiperCards'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import Swiper from "../components/SwiperCards";
+import styles from "../styles/Home.module.css";
+import { getPhotosData } from "../components/FirebaseUtils";
 
-
-export default function Home() {
+export default function Home({ data }) {
+  console.log(data);
+  const photos = Object.values(data.slidephotos)
+  console.log(photos);
   return (
     <>
       <Head>
@@ -14,8 +17,27 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-    <Swiper/>
+        <Swiper />
+
+        {
+          photos.map((photo) => {
+            return (
+              <div>
+                {photo}
+              </div>
+            )
+          })
+        }
       </main>
     </>
-  )
+  );
 }
+
+export const getStaticProps = async () => {
+  const data = await getPhotosData();
+  return {
+    props: {
+      data,
+    },
+  };
+};

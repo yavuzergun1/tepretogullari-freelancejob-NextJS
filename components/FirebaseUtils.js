@@ -25,10 +25,18 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 export const db = getFirestore();
 
-const googleProvider = new GoogleAuthProvider();
-googleProvider.setCustomParameters({
-  prompt: "select_account",
-});
+export const getAboutData = async () => {
+  const docRef = doc(db, "icerik", "hakkimizda");
+  const docSnap = await getDoc(docRef);
+  const data = docSnap.data();
+  return data;
+};
+
+export const getPhotosData = async () => {
+  const docRef = doc(db, "slider", "photos");
+  const docSnap = await getDoc(docRef);
+  const data = docSnap.data();
+  return data;
+};
