@@ -30,18 +30,17 @@ export default function App({ photos }) {
           dynamicBullets: true,
         }}
       >
-        <SwiperSlide>
-          <Image width={800} height={500} src="/images/slider 1.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image width={800} height={500} src="/images/slider 2.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image width={800} height={500} src="/images/slider 3.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image width={800} height={500} src="/images/slider-4.jpg" />
-        </SwiperSlide>
+        {
+          photos.map((photo,i) => {
+            return (
+              <SwiperSlide key={i}>
+                <Image priority alt="car" width={800} height={500} src={photo} />
+              </SwiperSlide>
+            );
+          })
+        }
+      
+  
       </Swiper>
     </>
   );
