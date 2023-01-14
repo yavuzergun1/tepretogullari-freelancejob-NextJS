@@ -23,7 +23,7 @@ export default function Home({ data }) {
           photos.map((photo) => {
             return (
               <div>
-                {photo}
+                {photo  }
               </div>
             )
           })
