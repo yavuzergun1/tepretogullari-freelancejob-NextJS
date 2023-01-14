@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Swiper from '../components/swiper/SwiperCards'
+import Swiper from '../components/SwiperCards'
 import styles from '../styles/Home.module.css'
 
 

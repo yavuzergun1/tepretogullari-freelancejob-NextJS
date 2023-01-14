@@ -15,7 +15,7 @@ export default function App() {
     <>
       <Swiper
         effect={"cards"}
-        grabCursor={true}
+        // grabCursor={true}
         modules={[EffectCards, Autoplay, Pagination]}
         className="mySwiper"
         loop={true}
