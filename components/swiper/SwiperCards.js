@@ -17,18 +17,20 @@ export default function App() {
         grabCursor={true}
         modules={[EffectCards]}
         className="mySwiper"
+        loop={true}
       >
         <SwiperSlide>
-          <Image width={500} height={300} src="/images/slider 1.jpg"/>
+          <Image width={800} height={500} src="/images/slider 1.jpg" />
         </SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        <SwiperSlide>
+          <Image width={800} height={500} src="/images/slider 2.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image width={800} height={500} src="/images/slider 3.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image width={800} height={500} src="/images/slider-4.jpg" />
+        </SwiperSlide>
       </Swiper>
     </>
   );
