@@ -2,3 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 @import url(./swiper.css);
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-container {
+    width:600px ;
+}
