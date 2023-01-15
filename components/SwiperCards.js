@@ -18,7 +18,7 @@ export default function App({ photos }) {
         effect={"cards"}
         // grabCursor={true}
         modules={[EffectCards, Autoplay, Pagination]}
-        className="mySwiper w-5/6"
+        className="mySwiper w-5/6 max-w-5xl h-[300px] mt-16 sm:h-[500px] lg:h-[650px] "
         loop={true}
         // autoplay={{
         //   delay: 3000,
