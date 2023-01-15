@@ -1,12 +1,15 @@
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 
 const Header = () => {
   return (
-    <div className="header-container w-full h-32 bg-slate-600">
-
-    <h1 className="text-blue-500 ">Header</h1>
+    <div className="header-container w-full h-[150px] border-black-500 border-b-2 flex px-9 py-2">
+      <div className="logo-container w-36 flex items-center">
+        <Image alt="logo" src="/images/ana-logo.png" width="150" height="150" />
+        <p className="text-[46px] font-semibold">Tepretoğulları</p>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
