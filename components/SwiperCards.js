@@ -14,17 +14,17 @@ export default function App({ photos }) {
   console.log(photos);
   return (
     <>
-      <Swiper
+      <Swiper 
         effect={"cards"}
         // grabCursor={true}
         modules={[EffectCards, Autoplay, Pagination]}
-        className="mySwiper"
+        className="mySwiper w-5/6"
         loop={true}
-        autoplay={{
-          delay: 3000,
-          pauseOnMouseEnter: true,
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   delay: 3000,
+        //   pauseOnMouseEnter: true,
+        //   disableOnInteraction: false,
+        // }}
         pagination={{
           clickable: true,
           dynamicBullets: true,
@@ -33,8 +33,8 @@ export default function App({ photos }) {
         {
           photos.map((photo,i) => {
             return (
-              <SwiperSlide key={i}>
-                <Image priority alt="car" width={800} height={500} src={photo} />
+              <SwiperSlide key={i} >
+                <Image priority alt="car" fill={true}  src={photo} />
               </SwiperSlide>
             );
           })
