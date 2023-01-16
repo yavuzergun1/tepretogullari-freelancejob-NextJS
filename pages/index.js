@@ -16,9 +16,20 @@ export default function Home({ data }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/images/Ana Logo.png" />
       </Head>
-      <main >
+      <main>
         <Swiper photos={photos} />
       </main>
+      <p className="text-[56px] font-[oswald] ">
+        Kemal Tepretoğulları
+      </p>
+      <p className="text-[56px] font-extrabold font-[Lobster]">
+        Kemal Tepretoğulları
+      </p>
+      <p className="text-[56px] font-extrabold font-[Anton]">
+        Kemal Tepretoğulları
+      </p>
+ 
+      <p className="text-[56px] font-extrabold ">Kemal Tepretoğulları</p>
     </>
   );
 }
