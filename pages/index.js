@@ -19,17 +19,19 @@ export default function Home({ data }) {
       <main>
         <Swiper photos={photos} />
       </main>
-      <p className="text-[56px] font-[oswald] ">
+      <p className="text-[56px] font-[oswald]  text-[rgb(4,16,68)]">
         Kemal Tepretoğulları
       </p>
-      <p className="text-[56px] font-extrabold font-[Lobster]">
+      <p className="text-[56px] font-extrabold font-[Lobster] text-[rgb(4,16,68)]">
         Kemal Tepretoğulları
       </p>
-      <p className="text-[56px] font-extrabold font-[Anton]">
+      <p className="text-[56px] font-extrabold font-[Anton] text-[rgb(4,16,68)]">
         Kemal Tepretoğulları
       </p>
- 
-      <p className="text-[56px] font-extrabold ">Kemal Tepretoğulları</p>
+
+      <p className="text-[56px] font-extrabold text-[rgb(4,16,68)] ">
+        Kemal Tepretoğulları
+      </p>
     </>
   );
 }
