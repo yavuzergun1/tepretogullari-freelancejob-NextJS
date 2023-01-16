@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
-const markalarimiz = () => {
-  return (
-    <div>markalarimiz</div>
-  )
-}
+const Markalarimiz = () => {
+  return <div>markalarimiz</div>;
+};
 
-export default markalarimiz
+export default Markalarimiz;

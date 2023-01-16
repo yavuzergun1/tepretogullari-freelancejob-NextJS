@@ -1,7 +1,7 @@
 import React from "react";
 import { getAboutData } from "../components/FirebaseUtils";
 
-const hakkimizda = ({ data }) => {
+const Hakkimizda = ({ data }) => {
   console.log(data);
   return (
     <div className="mt-24 h-[100vh]">
@@ -14,7 +14,7 @@ const hakkimizda = ({ data }) => {
   );
 };
 
-export default hakkimizda;
+export default Hakkimizda;
 
 export const getStaticProps = async () => {
   const data = await getAboutData();

@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
-const vizyon = () => {
-  return (
-    <div>vizyon</div>
-  )
-}
+const Vizyon = () => {
+  return <div>Vizyon</div>;
+};
 
-export default vizyon
+export default Vizyon;

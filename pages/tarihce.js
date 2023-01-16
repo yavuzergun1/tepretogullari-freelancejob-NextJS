@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
-const tarihce = () => {
-  return (
-    <div>tarihce</div>
-  )
-}
+const Tarihce = () => {
+  return <div>Tarihce</div>;
+};
 
-export default tarihce
+export default Tarihce;
