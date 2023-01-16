@@ -18,7 +18,6 @@ export default function Home({ data }) {
       </Head>
       <main>
         <Swiper photos={photos} />
-        <h1>başlık</h1>
       </main>
    
     </>
