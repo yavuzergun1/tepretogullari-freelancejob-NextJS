@@ -4,7 +4,7 @@ import { getAboutData } from "../components/FirebaseUtils";
 const Hakkimizda = ({ data }) => {
   console.log(data);
   return (
-    <div className="mt-24 h-[100vh]">
+    <div className="mt-24 h-[100vh] font-[NouvelR]">
       <h1 className="text-center mb-14">{data.title} </h1>
       <p>{data.p1} </p>
       <p>{data.p2} </p>
