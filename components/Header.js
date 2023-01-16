@@ -6,7 +6,7 @@ import React from "react";
 const Header = () => {
   const router = useRouter();
   return (
-    <div className="header-container w-full h-[150px] border-black-500 border-b-2 flex justify-between px-9 py-2 cursor-pointer">
+    <div className="header-container w-full h-[150px] border-black-500 border-b-2 flex justify-between px-3 py-2 cursor-pointer">
       <div
         className="logo-container w-[425px] flex items-center text-[rgb(4,16,68)]"
         onClick={() => router.push("/")}
@@ -16,12 +16,34 @@ const Header = () => {
           Kemal Tepretoğulları
         </p>
       </div>
-      <div className="w-[550px] flex justify-between items-center font-[NouvelR]">
+      <div className="w-[490px] hidden lg:flex justify-between items-center font-[NouvelR] text-lg">
         <Link href={"/hakkimizda"}>Hakkımızda </Link>
         <Link href={"/tarihce"}> Tarihçemiz</Link>
         <Link href={"/vizyon"}>Vizyon ve Misyon </Link>
         <Link href={"/markalarimiz"}> Markalarımız</Link>
       </div>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-6 h-6"
+            aria-hidden="true"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
     </div>
   );
 };
