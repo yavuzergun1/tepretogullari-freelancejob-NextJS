@@ -27,6 +27,13 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore();
 
+export const getLogosData = async () => {
+  const docRef = doc(db, "icerik", "logos");
+  const docSnap = await getDoc(docRef);
+  const data = docSnap.data();
+  return data;
+};
+
 export const getMarkalarimizData = async () => {
   const docRef = doc(db, "icerik", "markalarimiz");
   const docSnap = await getDoc(docRef);

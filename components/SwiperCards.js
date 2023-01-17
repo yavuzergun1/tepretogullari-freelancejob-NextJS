@@ -18,7 +18,7 @@ export default function App({ photos }) {
         effect={"cards"}
         // grabCursor={true}
         modules={[EffectCards, Autoplay, Pagination]}
-        className="mySwiper mb-20 w-5/6 max-w-5xl h-[300px] mt-16 sm:h-[500px] lg:h-[650px] "
+        className="mySwiper mb-20 w-7/12 max-w-5xl h-[270px] mt-16 sm:h-[500px] lg:h-[610px] "
         loop={true}
         autoplay={{
           delay: 3000,
@@ -32,7 +32,7 @@ export default function App({ photos }) {
       >
         {photos.map((photo, i) => {
           return (
-            <SwiperSlide key={i}>
+            <SwiperSlide key={i} >
               <Image priority alt="car" fill={true} src={photo} />
             </SwiperSlide>
           );

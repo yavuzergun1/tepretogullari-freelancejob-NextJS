@@ -2,9 +2,9 @@ import Head from "next/head";
 import Image from "next/image";
 import Swiper from "../components/SwiperCards";
 import styles from "../styles/Home.module.css";
-import { getPhotosData } from "../components/FirebaseUtils";
+import { getLogosData, getPhotosData } from "../components/FirebaseUtils";
 
-export default function Home({ data }) {
+export default function Home({ data, logos }) {
   console.log(data);
   const photos = Object.values(data.slidephotos);
   console.log(photos);
@@ -17,18 +17,49 @@ export default function Home({ data }) {
         <link rel="icon" href="/images/ana-logo.png" />
       </Head>
       <main>
-        <Swiper photos={photos} />
+        <div className="home-container w-12/12 flex justify-between items-center ">
+          <div className="left-logos w-1/12 h-[440px] flex-col items-stretch justify-center">
+            <div className="img-container w-10/12 h-32 relative mb-2  m-auto">
+              <Image style={{ margin: "auto" }} fill src={logos.dacia} />
+            </div>
+            <div className="img-container w-8/12 h-24 relative mb-5  m-auto">
+              <Image fill src={logos.kt2} />
+            </div>
+            <div className="img-container w-10/12 h-24 relative mb-2  m-auto">
+              <Image fill src={logos.renault} />
+            </div>
+            <div className="img-container w-12/12 h-20 relative  m-auto">
+              <Image fill src={logos.teprent} />
+            </div>
+          </div>
+          <Swiper photos={photos} />
+          <div className="right-logos w-1/12 h-[350px] flex-col items-center justify-center">
+            <div className="img-container w-10/12 h-20 relative mb-2  m-auto">
+              <Image fill src={logos.ford} />
+            </div>{" "}
+            <div className="img-container w-10/12 h-24 relative mb-2 m-auto">
+              <Image fill src={logos.nissan} />
+            </div>{" "}
+            <div className="img-container w-10/12 h-24 relative mb-2  m-auto">
+              <Image fill src={logos.sigorta} />
+            </div>{" "}
+            <div className="img-container w-12/12 h-20 relative mb-2  m-auto">
+              <Image fill src={logos.tepretparts} />
+            </div>
+          </div>
+        </div>
       </main>
-   
     </>
   );
 }
 
 export const getStaticProps = async () => {
   const data = await getPhotosData();
+  const logos = await getLogosData();
   return {
     props: {
       data,
+      logos,
     },
   };
 };
