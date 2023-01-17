@@ -21,14 +21,19 @@ const Markalarimiz = ({ data }) => {
 
       <div className="flex flex-col  md:flex-row  mb-20 items-center">
         {/* <h2>{data.title2} </h2> */}
-        <Image width={"300"} height="300" src={data.nissanLogo} />
+        <Image
+          className="mb-5 md:mb-0"
+          width={"300"}
+          height="300"
+          src={data.nissanLogo}
+        />
         <p>{data.p2} </p>
       </div>
 
       <div className="flex flex-col  md:flex-row  mb-20 items-center">
         {/* <h2>{data.title3} </h2> */}
         <Image
-          className="pr-10"
+          className="md:pr-10 mb-5 md:mb-0"
           width={"300"}
           height="300"
           src={data.fordLogo}
@@ -39,7 +44,7 @@ const Markalarimiz = ({ data }) => {
       <div className="flex flex-col  md:flex-row  mb-20 items-center">
         {/* <h2>{data.title4} </h2> */}
         <Image
-          className="pr-10"
+          className="md:pr-10"
           width={"300"}
           height="300"
           src={data.teprentLogo}
@@ -51,7 +56,7 @@ const Markalarimiz = ({ data }) => {
         {" "}
         {/* <h2>{data.title5} </h2> */}
         <Image
-          className="pr-10"
+          className="md:pr-10 mb-5 md:mb-0"
           width={"300"}
           height="300"
           src={data.kt2Logo}
@@ -59,7 +64,7 @@ const Markalarimiz = ({ data }) => {
         <div>
           <p>{data.p5} </p>
           <br />
-          <p>KT2 ‘den araç alırken içiniz rahat çünkü;</p>
+          <p className="underline leading-7">KT2 ‘den araç alırken içiniz rahat çünkü;</p>
           <ul>
             <li>• 96 nokta kontrolü var. </li>
             <li>• Deneme sürüş imkânı var.</li>
@@ -74,7 +79,7 @@ const Markalarimiz = ({ data }) => {
       <div className="flex flex-col  md:flex-row  mb-20 items-center">
         {" "}
         <Image
-          className="pr-10"
+          className="md:pr-10 mb-5 md:mb-0"
           width={"300"}
           height="300"
           src={data.sigortaLogo}
@@ -84,7 +89,7 @@ const Markalarimiz = ({ data }) => {
       <div className="flex flex-col  md:flex-row  mb-20 items-center">
         {" "}
         <Image
-          className="pr-10"
+          className="md:pr-10"
           width={"300"}
           height="300"
           src={data.tepretPartsLogo}
@@ -94,7 +99,7 @@ const Markalarimiz = ({ data }) => {
       <div className="flex flex-col  md:flex-row  mb-20 items-center">
         {" "}
         <Image
-          className="pr-10"
+          className="md:pr-10"
           width={"300"}
           height="300"
           src={data.totalLogo}
