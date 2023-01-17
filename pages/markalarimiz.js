@@ -5,14 +5,28 @@ import { getMarkalarimizData } from "../components/FirebaseUtils";
 const Markalarimiz = ({ data }) => {
   console.log(data);
   return (
-    <div className="mt-24 font-[NouvelR]">
-      <h1>{data.mainTitle} </h1>
-      {/* <h2>{data.title1} </h2> */}
-      <Image width={"300"} height="300" src={data.renaultLogo} />
-      <p>{data.p1} </p>
+    <div className="mt-24 font-[NouvelR] text-[rgb(4,16,68)] px-10 text-justify">
+      <h1 className="text-center font-bold mb-16">{data.mainTitle} </h1>
+
+      <div className="flex flex-col  md:flex-row  mb-20 items-center">
+        {/* <h2>{data.title1} </h2> */}
+        <Image
+          className="lg:h-[190px] lg:w-[300px] mb-5 md:mb-0"
+          width="300"
+          height="300"
+          src={data.renaultLogo}
+        />
+        <p>{data.p1} </p>
+      </div>
+
+      <div className="flex flex-col  md:flex-row  mb-20 items-center">
+        {/* <h2>{data.title2} </h2> */}
+   
+      <Image width={"300"} height="300" src={data.nissanLogo} />
+        <p>{data.p2} </p>
+      </div>
 
       {/* <h2>{data.title2} </h2> */}
-      <Image width={"300"} height="300" src={data.nissanLogo} />
       <p>{data.p2}</p>
 
       {/* <h2>{data.title3} </h2> */}
@@ -36,6 +50,15 @@ const Markalarimiz = ({ data }) => {
         <li>• Yol yardım hizmeti var.</li>
         <li>• Bürokrasiye yer yok.</li>
       </ul>
+
+      <Image width={"300"} height="300" src={data.sigortaLogo} />
+      <p>{data.p6} </p>
+
+      <Image width={"300"} height="300" src={data.tepretPartsLogo} />
+      <p>{data.p7} </p>
+
+      <Image width={"300"} height="300" src={data.totalLogo} />
+      <p>{data.p8} </p>
     </div>
   );
 };

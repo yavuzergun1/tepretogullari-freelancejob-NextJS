@@ -16,34 +16,32 @@ export default function Home({ data, logos }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/images/ana-logo.png" />
       </Head>
-      <main>
-        <div className="home-container w-12/12 flex justify-between items-center ">
-          <div className="left-logos w-1/12 h-[440px] flex-col items-stretch justify-center">
-            <div className="img-container w-10/12 h-32 relative mb-2  m-auto">
+      <main className="w-[100%]">
+        <div className="home-container w-[100%] flex flex-col items-center justify-center">
+          <Swiper photos={photos} />
+          <div className="logos w-[90%] h-[250px] flex items-center justify-between">
+            <div className="img-container w-[10%] h-32 relative mb-2  ">
               <Image style={{ margin: "auto" }} fill src={logos.dacia} />
             </div>
-            <div className="img-container w-8/12 h-24 relative mb-5  m-auto">
+            <div className="img-container w-[10%] h-24 relative mb-5  ">
               <Image fill src={logos.kt2} />
             </div>
-            <div className="img-container w-10/12 h-24 relative mb-2  m-auto">
+            <div className="img-container w-[10%] h-24 relative mb-2 ">
               <Image fill src={logos.renault} />
             </div>
-            <div className="img-container w-12/12 h-20 relative  m-auto">
+            <div className="img-container w-[10%] h-20 relative ">
               <Image fill src={logos.teprent} />
             </div>
-          </div>
-          <Swiper photos={photos} />
-          <div className="right-logos w-1/12 h-[350px] flex-col items-center justify-center">
-            <div className="img-container w-10/12 h-20 relative mb-2  m-auto">
+            <div className="img-container w-[10%] h-20 relative mb-2 ">
               <Image fill src={logos.ford} />
             </div>{" "}
-            <div className="img-container w-10/12 h-24 relative mb-2 m-auto">
+            <div className="img-container w-[10%] h-24 relative mb-2 ">
               <Image fill src={logos.nissan} />
             </div>{" "}
-            <div className="img-container w-10/12 h-24 relative mb-2  m-auto">
+            <div className="img-container w-[10%] h-24 relative mb-2 ">
               <Image fill src={logos.sigorta} />
             </div>{" "}
-            <div className="img-container w-12/12 h-20 relative mb-2  m-auto">
+            <div className="img-container w-[10%] h-20 relative mb-2  ">
               <Image fill src={logos.tepretparts} />
             </div>
           </div>
