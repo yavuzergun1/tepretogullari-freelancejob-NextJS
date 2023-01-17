@@ -11,7 +11,7 @@ const Header = () => {
         className="logo-container cursor-pointer w-[425px] flex items-center text-[rgb(4,16,68)]"
         onClick={() => router.push("/")}
       >
-        <Image className="w-24 md:w-40" priority alt="logo" src="/images/ana-logo.png" width="150" height="150" />
+        <Image className="w-24 md:w-36" priority alt="logo" src="/images/ana-logo.png" width="150" height="150" />
         <p className="text-[1.2rem] md:text-[1.6rem] font-[NouvelR] font-extrabold">
           Kemal Tepretoğulları
         </p>
