@@ -11,8 +11,10 @@ const Hakkimizda = ({ data, photos }) => {
         <h1 className="text-center mb-14">{data.title} </h1>
         <p className="text-justify">{data.p1} </p>
         <p className="text-justify">{data.p2} </p>
-        <p className="text-justify">{data.p3} </p>
-        <p className="text-justify">{data.p4} </p>
+        <h2 className="text-center mt-5">{data.title2} </h2>
+        <p className="text-center">{data.p3} </p>
+        <h2 className="text-center mt-5">{data.title3} </h2>
+        <p className="text-center">{data.p4} </p>
       </div>
     </div>
   );

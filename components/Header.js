@@ -6,17 +6,24 @@ import React from "react";
 const Header = () => {
   const router = useRouter();
   return (
-    <div className="header-container w-full h-[150px] border-black-500 border-b-2 flex justify-between px-3 py-2 ">
+    <div className="header-container w-full h-[150px] border-black-500 border-b-2 flex justify-between px-4 lg:px-9 py-2 ">
       <div
         className="logo-container cursor-pointer w-[425px] flex items-center text-[rgb(4,16,68)]"
         onClick={() => router.push("/")}
       >
-        <Image className="w-24 md:w-36" priority alt="logo" src="/images/ana-logo.png" width="150" height="150" />
+        <Image
+          className="w-24 md:w-36"
+          priority
+          alt="logo"
+          src="/images/ana-logo.png"
+          width="150"
+          height="150"
+        />
         <p className="text-[1.2rem] md:text-[1.6rem] font-[NouvelR] font-extrabold">
           Kemal Tepretoğulları
         </p>
       </div>
-      <div className="w-[550px] hidden lg:flex justify-between items-center font-[NouvelR] text-lg">
+      <div className=" w-[330px] lg:w-[380px] hidden md:flex justify-between items-center font-[NouvelR] text-lg">
         <Link className="hover:text-[rgb(71,101,236)]" href={"/hakkimizda"}>
           Hakkımızda{" "}
         </Link>
@@ -24,9 +31,7 @@ const Header = () => {
           {" "}
           Tarihçemiz
         </Link>
-        <Link className="hover:text-[rgb(71,101,236)]" href={"/vizyon"}>
-          Vizyon ve Misyon{" "}
-        </Link>
+
         <Link className="hover:text-[rgb(71,101,236)]" href={"/markalarimiz"}>
           {" "}
           Markalarımız
@@ -35,7 +40,7 @@ const Header = () => {
       <button
         data-collapse-toggle="navbar-default"
         type="button"
-        className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
         aria-controls="navbar-default"
         aria-expanded="false"
       >
