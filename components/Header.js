@@ -23,7 +23,7 @@ const Header = () => {
           Kemal Tepretoğulları
         </p>
       </div>
-      <div className=" w-[330px] lg:w-[380px] hidden md:flex justify-between items-center font-[NouvelR] text-lg">
+      <div className=" w-[330px] lg:w-[380px] hidden md:flex justify-between items-center font-[nouvelR] text-lg">
         <Link className="hover:text-[rgb(71,101,236)]" href={"/hakkimizda"}>
           Hakkımızda{" "}
         </Link>
