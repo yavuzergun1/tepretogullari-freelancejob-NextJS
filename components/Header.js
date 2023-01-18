@@ -19,7 +19,7 @@ const Header = () => {
           width="150"
           height="150"
         />
-        <p className="text-[1.2rem] md:text-[1.6rem] font-[NouvelR] font-extrabold">
+        <p className="text-[1.2rem] md:text-[1.6rem] font-[nouvelR] font-extrabold">
           Kemal Tepretoğulları
         </p>
       </div>
