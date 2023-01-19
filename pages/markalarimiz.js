@@ -2,8 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { getLogosData } from "../components/FirebaseUtils";
 import { getMarkalarimizData } from "../components/FirebaseUtils";
-import {Scroll} from "react-scroll";
-import {Link} from "react-scroll";
+// import {Link} from "react-scroll";
 
 const Markalarimiz = ({ data, logos }) => {
   console.log(data);
@@ -16,9 +15,9 @@ const Markalarimiz = ({ data, logos }) => {
           <Image alt="logo" style={{ margin: "auto" }} fill src={logos.dacia} />
         </div>
         <div className="img-container w-[10%] h-24 relative mb-5  ">
-          <Link to="kt2" smooth={true}>
+          {/* <Link to="kt2" smooth={true}> */}
             <Image alt="logo" fill src={logos.kt2} />
-          </Link>
+          {/* </Link> */}
         </div>
         <div className="img-container w-[10%] h-24 relative mb-2 ">
           <Image alt="logo" fill src={logos.renault} />
