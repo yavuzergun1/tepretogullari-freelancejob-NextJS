@@ -49,7 +49,6 @@ const Header = () => {
             <img
               className="w-7"
               src="/images/icons8-chevron-right-100.png"
-              alt=""
             />
           </Link>
 
@@ -61,7 +60,6 @@ const Header = () => {
             <img
               className="w-7"
               src="/images/icons8-chevron-right-100.png"
-              alt=""
             />
           </Link>
 
@@ -73,7 +71,6 @@ const Header = () => {
             <img
               className="w-7"
               src="/images/icons8-chevron-right-100.png"
-              alt=""
             />
           </Link>
 
@@ -85,7 +82,6 @@ const Header = () => {
             <img
               className="w-7"
               src="/images/icons8-chevron-right-100.png"
-              alt=""
             />
           </Link>
 
@@ -97,7 +93,6 @@ const Header = () => {
             <img
               className="w-7"
               src="/images/icons8-chevron-right-100.png"
-              alt=""
             />
           </Link>
 
@@ -109,7 +104,6 @@ const Header = () => {
             <img
               className="w-7"
               src="/images/icons8-chevron-right-100.png"
-              alt=""
             />
           </Link>
         </div>
