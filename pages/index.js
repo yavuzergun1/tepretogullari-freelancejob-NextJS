@@ -29,7 +29,7 @@ export default function Home({ data, logos }) {
               />
             </div>
             <div className="img-container w-[10%] h-24 relative mb-5  ">
-              <Image alt="logo" alt="logo" fill src={logos.kt2} />
+              <Image alt="logo" fill src={logos.kt2} />
             </div>
             <div className="img-container w-[10%] h-24 relative mb-2 ">
               <Image alt="logo" fill src={logos.renault} />
