@@ -20,37 +20,7 @@ export default function Home({ data, logos }) {
       <main className="w-[100%]">
         <div className="home-container w-[100%] flex flex-col items-center justify-center">
           <Swiper photos={photos} />
-          <div className="logos w-[90%] h-[250px] flex items-center justify-between">
-            <div className="img-container w-[10%] h-32 relative mb-2  ">
-              <Image
-                alt="logo"
-                style={{ margin: "auto" }}
-                fill
-                src={logos.dacia}
-              />
-            </div>
-            <div className="img-container w-[10%] h-24 relative mb-5  ">
-              <Image alt="logo" fill src={logos.kt2} />
-            </div>
-            <div className="img-container w-[10%] h-24 relative mb-2 ">
-              <Image alt="logo" fill src={logos.renault} />
-            </div>
-            <div className="img-container w-[10%] h-20 relative ">
-              <Image alt="logo" fill src={logos.teprent} />
-            </div>
-            <div className="img-container w-[10%] h-20 relative mb-2 ">
-              <Image alt="logo" fill src={logos.ford} />
-            </div>{" "}
-            <div className="img-container w-[10%] h-24 relative mb-2 ">
-              <Image alt="logo" fill src={logos.nissan} />
-            </div>{" "}
-            <div className="img-container w-[10%] h-24 relative mb-2 ">
-              <Image alt="logo" fill src={logos.sigorta} />
-            </div>{" "}
-            <div className="img-container w-[10%] h-20 relative mb-2  ">
-              <Image alt="logo" fill src={logos.tepretparts} />
-            </div>
-          </div>
+        
         </div>
       </main>
     </>
@@ -59,7 +29,6 @@ export default function Home({ data, logos }) {
 
 export const getStaticProps = async () => {
   const data = await getPhotosData();
-  const logos = await getLogosData();
   return {
     props: {
       data,

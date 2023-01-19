@@ -1,13 +1,44 @@
 import Image from "next/image";
 import React from "react";
+import { getLogosData } from "../components/FirebaseUtils";
 import { getMarkalarimizData } from "../components/FirebaseUtils";
+import {Scroll} from "react-scroll";
+import {Link} from "react-scroll";
 
-const Markalarimiz = ({ data }) => {
+const Markalarimiz = ({ data, logos }) => {
   console.log(data);
   return (
-    <div className="mt-24 font-[NouvelR] text-[rgb(4,16,68)] px-10 text-justify">
-      <h1 className="text-center font-bold mb-16">{data.mainTitle} </h1>
+    <div className="mt-40 font-[NouvelR] text-[rgb(4,16,68)] px-10 text-justify">
+      <h1 className="text-center font-bold ">{data.mainTitle} </h1>
 
+      <div className="logos w-[90%] h-[100px] flex items-center justify-between fixed left-20 top-[175px] bg-white">
+        <div className="img-container w-[10%] h-32 relative mb-2  ">
+          <Image alt="logo" style={{ margin: "auto" }} fill src={logos.dacia} />
+        </div>
+        <div className="img-container w-[10%] h-24 relative mb-5  ">
+          <Link to="kt2" smooth={true}>
+            <Image alt="logo" fill src={logos.kt2} />
+          </Link>
+        </div>
+        <div className="img-container w-[10%] h-24 relative mb-2 ">
+          <Image alt="logo" fill src={logos.renault} />
+        </div>
+        <div className="img-container w-[10%] h-20 relative ">
+          <Image alt="logo" fill src={logos.teprent} />
+        </div>
+        <div className="img-container w-[10%] h-20 relative mb-2 ">
+          <Image alt="logo" fill src={logos.ford} />
+        </div>{" "}
+        <div className="img-container w-[10%] h-24 relative mb-2 ">
+          <Image alt="logo" fill src={logos.nissan} />
+        </div>{" "}
+        <div className="img-container w-[10%] h-24 relative mb-2 ">
+          <Image alt="logo" fill src={logos.sigorta} />
+        </div>{" "}
+        <div className="img-container w-[10%] h-20 relative mb-2  ">
+          <Image alt="logo" fill src={logos.tepretparts} />
+        </div>
+      </div>
       <div className="flex flex-col  md:flex-row  mb-20 items-center">
         {/* <h2>{data.title1} </h2> */}
         <Image
@@ -30,7 +61,7 @@ const Markalarimiz = ({ data }) => {
         <p>{data.p2} </p>
       </div>
 
-      <div className="flex flex-col  md:flex-row  mb-20 items-center">
+      <div id="kt2" className="flex flex-col  md:flex-row  mb-20 items-center">
         {/* <h2>{data.title3} </h2> */}
         <Image
           className="md:pr-10 mb-5 md:mb-0"
@@ -64,7 +95,9 @@ const Markalarimiz = ({ data }) => {
         <div>
           <p>{data.p5} </p>
           <br />
-          <p className="underline leading-7">KT2 ‘den araç alırken içiniz rahat çünkü;</p>
+          <p className="underline leading-7">
+            KT2 ‘den araç alırken içiniz rahat çünkü;
+          </p>
           <ul>
             <li>• 96 nokta kontrolü var. </li>
             <li>• Deneme sürüş imkânı var.</li>
@@ -114,9 +147,12 @@ export default Markalarimiz;
 
 export const getStaticProps = async () => {
   const data = await getMarkalarimizData();
+  const logos = await getLogosData();
+
   return {
     props: {
       data,
+      logos,
     },
   };
 };
