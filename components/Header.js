@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
+import { SVG } from "react-inlinesvg";
+
 const Header = () => {
   const router = useRouter();
   const [open, setOpen] = useState(false);
@@ -10,19 +12,19 @@ const Header = () => {
     setOpen(!open);
   };
   return (
-    <div className="header-container w-full h-[150px] border-black-500 border-b-2 flex justify-between px-4 lg:px-9 py-2 ">
-      <button onClick={handleClick} class="relative group z-20">
-        <div class="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-slate-700 ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md">
-          <div class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-500 origin-center overflow-hidden">
+    <div className="header-container w-full h-[150px] border-black-500 border-b-2 flex justify-center px-4 lg:px-9 py-2 ">
+      <button onClick={handleClick} class="absolute left-10 top-10 group z-20">
+        <div class="relative flex overflow-hidden items-center justify-center rounded-full w-[53px] h-[53px] transform transition-all bg-slate-700 ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md">
+          <div class="flex flex-col justify-between w-[20px] h-[18px] transform transition-all duration-500 origin-center overflow-hidden">
             <div
               class={`bg-white h-[2px] w-7 transform transition-all duration-300 ${
-                !open ? " -rotate-45" : " "
+                !open ? " -rotate-[39deg]" : " "
               }  -translate-x-1`}
             ></div>
-            <div class="bg-white h-[2px] w-7 rounded transform transition-all duration-500 "></div>
+            <div class="bg-white h-[2px] w-5 rounded transform transition-all duration-500 "></div>
             <div
               class={`bg-white h-[2px] w-7 transform transition-all duration-300 ${
-                !open ? " rotate-45" : " "
+                !open ? " rotate-[39deg]" : " "
               }  -translate-x-1`}
             ></div>
           </div>
@@ -36,19 +38,77 @@ const Header = () => {
             : "translate-x-0 transition-all duration-500"
         } `}
       >
-        <div className=" w-[320px] h-[750px] pl-5 hidden md:flex flex-col justify-evenly font-[nouvelR] text-lg text-white">
-          <Link className="hover:text-[rgb(71,101,236)]" href={"/hakkimizda"}>
-            Hakkımızda{" "} 
-            <Image className="fill-white" width={20} height={20} src="/images/chevron-right.svg" />
-          </Link>
-          <Link className="hover:text-[rgb(71,101,236)]" href={"/tarihce"}>
-            {" "}
-            Tarihçemiz
+        <div className=" w-[320px] h-[550px] mt-32 pl-5 hidden md:flex flex-col justify-evenly font-[nouvelR] text-lg text-white">
+          <Link
+            className="hover:text-[rgb(71,101,236)] flex justify-between"
+            href={"/hakkimizda"}
+          >
+            Hakkımızda
+            <img
+              className="w-7"
+              src="/images/icons8-chevron-right-100.png"
+              alt=""
+            />
           </Link>
 
-          <Link className="hover:text-[rgb(71,101,236)]" href={"/markalarimiz"}>
-            {" "}
+          <Link
+            className="hover:text-[rgb(71,101,236)] flex justify-between"
+            href={"/tarihce"}
+          >
+            Hikayemiz
+            <img
+              className="w-7"
+              src="/images/icons8-chevron-right-100.png"
+              alt=""
+            />
+          </Link>
+
+          <Link
+            className="hover:text-[rgb(71,101,236)] flex justify-between"
+            href={"/markalarimiz"}
+          >
             Markalarımız
+            <img
+              className="w-7"
+              src="/images/icons8-chevron-right-100.png"
+              alt=""
+            />
+          </Link>
+
+          <Link
+            className="hover:text-[rgb(71,101,236)] flex justify-between"
+            href={"/markalarimiz"}
+          >
+            İnsan Kaynakları
+            <img
+              className="w-7"
+              src="/images/icons8-chevron-right-100.png"
+              alt=""
+            />
+          </Link>
+
+          <Link
+            className="hover:text-[rgb(71,101,236)] flex justify-between"
+            href={"/markalarimiz"}
+          >
+            İletişim
+            <img
+              className="w-7"
+              src="/images/icons8-chevron-right-100.png"
+              alt=""
+            />
+          </Link>
+
+          <Link
+            className="hover:text-[rgb(71,101,236)] flex justify-between"
+            href={"/markalarimiz"}
+          >
+            KVKK
+            <img
+              className="w-7"
+              src="/images/icons8-chevron-right-100.png"
+              alt=""
+            />
           </Link>
         </div>
       </div>
