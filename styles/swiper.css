@@ -10,5 +10,11 @@
   color: #fff;
 }
 .swiper-pagination {
-transform: translate(-50px, 50px) !important;
+transform: translate(0px, 50px) !important;
+/* width: 450px !important; */
+height: 60px!important;
+}
+.swiper-pagination-bullet{
+  width: 15px!important;
+  height: 15px!important;
 }

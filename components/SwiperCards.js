@@ -32,8 +32,8 @@ export default function App({ photos }) {
       >
         {photos.map((photo, i) => {
           return (
-            <SwiperSlide  key={i} >
-              <Image priority alt="car" fill={true} src={photo} />
+            <SwiperSlide className="w-[80%]" key={i} >
+              <Image priority className="w-[90%] h-[550px]" alt="car" width="500" height="90" src={photo} />
             </SwiperSlide>
           );
         })}
