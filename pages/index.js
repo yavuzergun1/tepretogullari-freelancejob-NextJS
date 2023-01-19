@@ -2,9 +2,9 @@ import Head from "next/head";
 import Image from "next/image";
 import Swiper from "../components/SwiperCards";
 import styles from "../styles/Home.module.css";
-import { getLogosData, getPhotosData } from "../components/FirebaseUtils";
+import { getPhotosData } from "../components/FirebaseUtils";
 
-export default function Home({ data, logos }) {
+export default function Home({ data }) {
   console.log(data);
   const photos = Object.values(data.slidephotos);
   console.log(photos);
@@ -32,7 +32,6 @@ export const getStaticProps = async () => {
   return {
     props: {
       data,
-      logos,
     },
   };
 };

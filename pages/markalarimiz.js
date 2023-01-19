@@ -10,7 +10,7 @@ const Markalarimiz = ({ data, logos }) => {
     <div className="mt-40 font-[NouvelR] text-[rgb(4,16,68)] px-10 text-justify">
       <h1 className="text-center font-bold ">{data.mainTitle} </h1>
 
-      <div className="logos w-[90%] h-[100px] flex items-center justify-between fixed left-20 top-[175px] bg-white">
+      <div className="logos-container w-[90%] h-[100px] flex items-center justify-between fixed left-20 top-[175px] bg-white">
         <div className="img-container w-[10%] h-32 relative mb-2  ">
           <Image alt="logo" style={{ margin: "auto" }} fill src={logos.dacia} />
         </div>
