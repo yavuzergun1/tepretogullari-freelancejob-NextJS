@@ -21,28 +21,33 @@ export default function Home({ data, logos }) {
           <Swiper photos={photos} />
           <div className="logos w-[90%] h-[250px] flex items-center justify-between">
             <div className="img-container w-[10%] h-32 relative mb-2  ">
-              <Image style={{ margin: "auto" }} fill src={logos.dacia} />
+              <Image
+                alt="logo"
+                style={{ margin: "auto" }}
+                fill
+                src={logos.dacia}
+              />
             </div>
             <div className="img-container w-[10%] h-24 relative mb-5  ">
-              <Image fill src={logos.kt2} />
+              <Image alt="logo" alt="logo" fill src={logos.kt2} />
             </div>
             <div className="img-container w-[10%] h-24 relative mb-2 ">
-              <Image fill src={logos.renault} />
+              <Image alt="logo" fill src={logos.renault} />
             </div>
             <div className="img-container w-[10%] h-20 relative ">
-              <Image fill src={logos.teprent} />
+              <Image alt="logo" fill src={logos.teprent} />
             </div>
             <div className="img-container w-[10%] h-20 relative mb-2 ">
-              <Image fill src={logos.ford} />
+              <Image alt="logo" fill src={logos.ford} />
             </div>{" "}
             <div className="img-container w-[10%] h-24 relative mb-2 ">
-              <Image fill src={logos.nissan} />
+              <Image alt="logo" fill src={logos.nissan} />
             </div>{" "}
             <div className="img-container w-[10%] h-24 relative mb-2 ">
-              <Image fill src={logos.sigorta} />
+              <Image alt="logo" fill src={logos.sigorta} />
             </div>{" "}
             <div className="img-container w-[10%] h-20 relative mb-2  ">
-              <Image fill src={logos.tepretparts} />
+              <Image alt="logo" fill src={logos.tepretparts} />
             </div>
           </div>
         </div>
