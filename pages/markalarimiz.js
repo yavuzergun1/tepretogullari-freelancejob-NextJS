@@ -17,8 +17,8 @@ const Markalarimiz = ({ data, logos }) => {
         <div className="img-container w-[10%] h-24 relative mb-5  ">
           {/* <Link to="kt2" smooth={true}> */}
             <Image alt="logo" fill src={logos.kt2} />
-          {/* </Link> */}
-        </div>
+          {/* </Link> */} 
+        </div >
         <div className="img-container w-[10%] h-24 relative mb-2 ">
           <Image alt="logo" fill src={logos.renault} />
         </div>
