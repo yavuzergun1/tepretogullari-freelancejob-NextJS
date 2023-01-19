@@ -44,6 +44,7 @@ const Header = () => {
           <Link
             className="hover:text-[rgb(71,101,236)] flex justify-between"
             href={"/hakkimizda"}
+            onClick={handleClick}
           >
             Hakkımızda
             <img className="w-7" src="/images/icons8-chevron-right-100.png" />
@@ -52,6 +53,7 @@ const Header = () => {
           <Link
             className="hover:text-[rgb(71,101,236)] flex justify-between"
             href={"/tarihce"}
+            onClick={handleClick}
           >
             Hikayemiz
             <img className="w-7" src="/images/icons8-chevron-right-100.png" />
@@ -60,6 +62,7 @@ const Header = () => {
           <Link
             className="hover:text-[rgb(71,101,236)] flex justify-between"
             href={"/markalarimiz"}
+            onClick={handleClick}
           >
             Markalarımız
             <img className="w-7" src="/images/icons8-chevron-right-100.png" />
@@ -68,6 +71,7 @@ const Header = () => {
           <Link
             className="hover:text-[rgb(71,101,236)] flex justify-between"
             href={"/markalarimiz"}
+            onClick={handleClick}
           >
             İnsan Kaynakları
             <img className="w-7" src="/images/icons8-chevron-right-100.png" />
@@ -76,6 +80,7 @@ const Header = () => {
           <Link
             className="hover:text-[rgb(71,101,236)] flex justify-between"
             href={"/markalarimiz"}
+            onClick={handleClick}
           >
             İletişim
             <img className="w-7" src="/images/icons8-chevron-right-100.png" />
@@ -84,6 +89,7 @@ const Header = () => {
           <Link
             className="hover:text-[rgb(71,101,236)] flex justify-between"
             href={"/markalarimiz"}
+            onClick={handleClick}
           >
             KVKK
             <img className="w-7" src="/images/icons8-chevron-right-100.png" />
