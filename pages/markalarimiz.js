@@ -7,18 +7,18 @@ import {Link} from "react-scroll";
 const Markalarimiz = ({ data, logos }) => {
   console.log(data);
   return (
-    <div className="mt-40 font-[NouvelR] text-[rgb(4,16,68)] px-10 text-justify">
+    <div className="mt-40 font-[Nouvel+R] text-[rgb(4,16,68)] px-10 text-justify">
       <h1 className="text-center font-bold ">{data.mainTitle} </h1>
 
-      <div className="logos-container w-[90%] h-[120px] flex items-center justify-between fixed left-20 top-[175px] bg-white">
+      <div className="logos-container w-[98%] h-[120px] flex items-center justify-between fixed left-5 top-[175px] bg-white">
         <div className="img-container w-[10%] h-32 relative mb-2  ">
           <Image alt="logo" style={{ margin: "auto" }} fill src={logos.dacia} />
         </div>
         <div className="img-container w-[10%] h-24 relative mb-5  ">
           <Link to="kt2" smooth={true}>
             <Image alt="logo" fill src={logos.kt2} />
-          </Link> 
-        </div >
+          </Link>
+        </div>
         <div className="img-container w-[10%] h-24 relative mb-2 ">
           <Image alt="logo" fill src={logos.renault} />
         </div>
@@ -40,57 +40,57 @@ const Markalarimiz = ({ data, logos }) => {
       </div>
       <div className="flex flex-col  md:flex-row  mb-20 items-center">
         {/* <h2>{data.title1} </h2> */}
-        <Image
+        {/* <Image
           className="lg:h-[190px] lg:w-[300px] mb-5 md:mb-0"
           width="300"
           height="300"
           src={data.renaultLogo}
-        />
+        /> */}
         <p>{data.p1} </p>
       </div>
 
       <div className="flex flex-col  md:flex-row  mb-20 items-center">
         {/* <h2>{data.title2} </h2> */}
-        <Image
+        {/* <Image
           className="mb-5 md:mb-0"
           width={"300"}
           height="300"
           src={data.nissanLogo}
-        />
-        <p>{data.p2} </p>
+        /> */}
+        <p id="kt2" > {data.p2} </p>
       </div>
 
-      <div id="kt2" className="flex flex-col  md:flex-row  mb-20 items-center">
+      <div className="flex flex-col  md:flex-row  mb-20 items-center">
         {/* <h2>{data.title3} </h2> */}
-        <Image
+        {/* <Image
           className="md:pr-10 mb-5 md:mb-0"
           width={"300"}
           height="300"
           src={data.fordLogo}
-        />
+        /> */}
         <p>{data.p3} </p>
       </div>
 
       <div className="flex flex-col  md:flex-row  mb-20 items-center">
         {/* <h2>{data.title4} </h2> */}
-        <Image
+        {/* <Image
           className="md:pr-10"
           width={"300"}
           height="300"
           src={data.teprentLogo}
-        />
+        /> */}
         <p>{data.p4} </p>
       </div>
 
       <div className="flex flex-col  md:flex-row  mb-20 items-center">
         {" "}
         {/* <h2>{data.title5} </h2> */}
-        <Image
+        {/* <Image
           className="md:pr-10 mb-5 md:mb-0"
           width={"300"}
           height="300"
           src={data.kt2Logo}
-        />
+        /> */}
         <div>
           <p>{data.p5} </p>
           <br />
