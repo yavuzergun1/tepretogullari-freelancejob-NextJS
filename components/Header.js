@@ -40,16 +40,13 @@ const Header = () => {
             : "translate-x-0 transition-all duration-500"
         } `}
       >
-        <div className="side-links-container w-[320px] h-[550px] mt-32 pl-5 flex flex-col justify-evenly font-[nouvelR] text-lg text-white">
+        <div className="side-links-container w-[320px] h-[550px] mt-32 pl-5 flex flex-col justify-evenly font-[[Nouvel+R] text-lg text-white">
           <Link
             className="hover:text-[rgb(71,101,236)] flex justify-between"
             href={"/hakkimizda"}
           >
             Hakkımızda
-            <img
-              className="w-7"
-              src="/images/icons8-chevron-right-100.png"
-            />
+            <img className="w-7" src="/images/icons8-chevron-right-100.png" />
           </Link>
 
           <Link
@@ -57,10 +54,7 @@ const Header = () => {
             href={"/tarihce"}
           >
             Hikayemiz
-            <img
-              className="w-7"
-              src="/images/icons8-chevron-right-100.png"
-            />
+            <img className="w-7" src="/images/icons8-chevron-right-100.png" />
           </Link>
 
           <Link
@@ -68,10 +62,7 @@ const Header = () => {
             href={"/markalarimiz"}
           >
             Markalarımız
-            <img
-              className="w-7"
-              src="/images/icons8-chevron-right-100.png"
-            />
+            <img className="w-7" src="/images/icons8-chevron-right-100.png" />
           </Link>
 
           <Link
@@ -79,10 +70,7 @@ const Header = () => {
             href={"/markalarimiz"}
           >
             İnsan Kaynakları
-            <img
-              className="w-7"
-              src="/images/icons8-chevron-right-100.png"
-            />
+            <img className="w-7" src="/images/icons8-chevron-right-100.png" />
           </Link>
 
           <Link
@@ -90,10 +78,7 @@ const Header = () => {
             href={"/markalarimiz"}
           >
             İletişim
-            <img
-              className="w-7"
-              src="/images/icons8-chevron-right-100.png"
-            />
+            <img className="w-7" src="/images/icons8-chevron-right-100.png" />
           </Link>
 
           <Link
@@ -101,10 +86,7 @@ const Header = () => {
             href={"/markalarimiz"}
           >
             KVKK
-            <img
-              className="w-7"
-              src="/images/icons8-chevron-right-100.png"
-            />
+            <img className="w-7" src="/images/icons8-chevron-right-100.png" />
           </Link>
         </div>
       </div>
@@ -120,7 +102,7 @@ const Header = () => {
           width="100"
           height="100"
         />
-        <p className="text-[1.2rem] md:text-[1.6rem] font-[nouvelR] font-extrabold">
+        <p className="text-[1.2rem] md:text-[1.6rem] font-[Nouvel+R] font-extrabold">
           Kemal Tepretoğulları
         </p>
       </div>
