@@ -25,6 +25,7 @@ export default function App({ photos }) {
           pauseOnMouseEnter: true,
           disableOnInteraction: false,
         }}
+        speed={2000}
         pagination={{
           clickable: true,
           dynamicBullets: true,
