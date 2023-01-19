@@ -10,6 +10,9 @@ const Header = () => {
   const handleClick = () => {
     setOpen(!open);
   };
+  const onClose = () => {
+    setOpen(true)
+  }
   return (
     <div className="header-container w-full h-[150px] border-black-500 border-b-2 flex justify-center px-4 lg:px-9 py-2 ">
       <button
@@ -101,6 +104,7 @@ const Header = () => {
         onClick={() => router.push("/")}
       >
         <Image
+          onClick={onClose}
           className="w-24"
           priority
           alt="logo"
@@ -108,7 +112,10 @@ const Header = () => {
           width="100"
           height="100"
         />
-        <p className="text-[1.2rem] md:text-[1.6rem] font-[Nouvel+R] font-extrabold">
+        <p
+          onClick={onClose}
+          className="text-[1.2rem] md:text-[1.6rem] font-[Nouvel+R] font-extrabold"
+        >
           Kemal Tepretoğulları
         </p>
       </div>
