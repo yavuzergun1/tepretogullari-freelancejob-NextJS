@@ -7,17 +7,17 @@ import "swiper/css";
 import "swiper/css/effect-cards";
 import "swiper/css/pagination";
 
-import { EffectCards, Autoplay, A11y, Pagination } from "swiper";
+import {  Autoplay, A11y, Pagination } from "swiper";
 import Image from "next/image";
 
 export default function App({ photos }) {
-  console.log(photos);
+  // console.log(photos);
   return (
     <>
       <Swiper
         effect={"cards"}
         // grabCursor={true}
-        modules={[EffectCards, Autoplay, Pagination]}
+        modules={[Autoplay, Pagination]}
         className="mySwiper mb-20 w-[70%] max-w-5xl h-[220px] mt-16 sm:h-[300px] md:h-[400px] lg:h-[610px] "
         loop={true}
         autoplay={{

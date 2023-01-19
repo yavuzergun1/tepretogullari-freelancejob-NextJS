@@ -9,7 +9,7 @@ import { EffectFade, Autoplay, A11y, Pagination } from "swiper";
 import Image from "next/image";
 
 export default function SwiperAbout({ photos }) {
-  console.log(photos);
+  // console.log(photos);
   return (
     <>
       <Swiper
