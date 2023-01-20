@@ -17,8 +17,14 @@ export default function Home({ data }) {
         <link rel="icon" href="/images/ana-logo.png" />
           <link href="https://fonts.googleapis.com/css2?family=Nouvel+R&display=swap" rel="stylesheet"></link>
       </Head>
-      <main className="w-[100%]">
+      <main className="w-[100%]"> 
         <div className="home-container w-[100%] flex flex-col items-center justify-center">
+        
+          <div className="w-[61%] mt-20 flex justify-between">
+            
+        <div className="w-[45%] h-32 bg-black"></div>
+        <div className="w-[45%] bg-orange-600"></div>
+        </div>
           <Swiper photos={photos} />
         
         </div>
