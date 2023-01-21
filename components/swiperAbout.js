@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-fade";
 
-import { EffectFade, Autoplay, A11y, Pagination } from "swiper";
+import { EffectFade, Autoplay, Pagination } from "swiper";
 import Image from "next/image";
 
 export default function SwiperAbout({ photos }) {
@@ -13,8 +13,8 @@ export default function SwiperAbout({ photos }) {
   return (
     <>
       <Swiper
-        effect={"fade"}
         // grabCursor={true}
+        effect={"fade"}
         modules={[EffectFade, Autoplay, Pagination]}
         className="mySwiper mb-20 w-[100%] max-w-5xl h-[220px] sm:h-[300px] md:h-[400px] lg:h-[550px] "
         loop={true}

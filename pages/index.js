@@ -22,40 +22,45 @@ export default function Home({ data }) {
         ></link>
       </Head>
       <main className="w-[100%]">
-        <div className="home-container w-[100%] flex flex-col items-center justify-center">
-          <div className="w-[61%] mt-20 flex justify-between">
-            {/* <Link href="/markalarimiz" > */}
-            <Link
-              href="/markalarimiz"
-              className="markalarimiz overflow-hidden cursor-pointer w-[45%] h-[110px] bg-black relative"
-            >
-              <Image
-                width="850"
-                height="250"
-                className="opacity-25 hover:scale-150 duration-1000"
-                src={"/images/anasayfa markalarımız.png"}
-              />
-              <h2 className="absolute top-8 left-14 font-light tracking-[.6rem] text-slate-100 pointer-events-none">
-                Markalarımız
-              </h2>
-            </Link>
-            {/* </Link> */}
-            <Link
-              href="/hakkimizda"
-              className="overflow-hidden cursor-pointer w-[45%] h-[110px] bg-black relative"
-            >
-              <Image
-                width="850"
-                height="250"
-                className="opacity-25 hover:scale-150 duration-1000 -translate-y-20"
-                src={"/images/anasayfa-hakkımızda.jpg"}
-              />
-              <h2 className="absolute top-8 left-[65px] font-light tracking-[.8rem] text-slate-100 pointer-events-none">
-                Hakkımızda
-              </h2>
-            </Link>
+        <div className="home-container py-20 w-[100%] flex ">
+          <div className="left-container w-[80%] flex flex-col items-center justify-center">
+            <div className="w-[85%] flex justify-between">
+              {/* <Link href="/markalarimiz" > */}
+              <Link
+                href="/markalarimiz"
+                className="markalarimiz overflow-hidden cursor-pointer w-[49%] h-[110px] bg-black relative"
+              >
+                <Image
+                  width="850"
+                  height="250"
+                  className="opacity-25 hover:scale-150 duration-1000"
+                  src={"/images/anasayfa markalarımız.png"}
+                />
+                <h2 className="absolute top-8 left-[85px] font-light tracking-[.6rem] text-slate-100 pointer-events-none">
+                  Markalarımız
+                </h2>
+              </Link>
+              {/* </Link> */}
+              <Link
+                href="/hakkimizda"
+                className="overflow-hidden cursor-pointer w-[49%] h-[110px] bg-black relative"
+              >
+                <Image
+                  width="850"
+                  height="250"
+                  className="opacity-25 hover:scale-150 duration-1000 -translate-y-20"
+                  src={"/images/anasayfa-hakkımızda.jpg"}
+                />
+                <h2 className="absolute top-8 left-[95px] font-light tracking-[.8rem] text-slate-100 pointer-events-none">
+                  Hakkımızda
+                </h2>
+              </Link>
+            </div>
+            <Swiper photos={photos} />
           </div>
-          <Swiper photos={photos} />
+          <div className="right-container w-[20%] border-l-2 flex flex-col items-center">
+            <Image width="250" height="550" src="/images/2019112914482635_preview.jpg" />
+          </div>
         </div>
       </main>
     </>
