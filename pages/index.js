@@ -3,6 +3,7 @@ import Image from "next/image";
 import Swiper from "../components/SwiperCards";
 import styles from "../styles/Home.module.css";
 import { getPhotosData } from "../components/FirebaseUtils";
+import Link from "next/link";
 
 export default function Home({ data }) {
   console.log(data);
@@ -23,28 +24,36 @@ export default function Home({ data }) {
       <main className="w-[100%]">
         <div className="home-container w-[100%] flex flex-col items-center justify-center">
           <div className="w-[61%] mt-20 flex justify-between">
-            <div className="markalarimiz w-[45%] h-[110px] bg-black relative">
+            {/* <Link href="/markalarimiz" > */}
+            <Link
+              href="/markalarimiz"
+              className="markalarimiz overflow-hidden cursor-pointer w-[45%] h-[110px] bg-black relative"
+            >
               <Image
                 width="850"
                 height="250"
-                className="opacity-25"
+                className="opacity-25 hover:scale-150 duration-1000"
                 src={"/images/anasayfa markalarımız.png"}
               />
-              <h2 className="absolute top-8 left-14 font-semibold tracking-[.6rem] text-white">
+              <h2 className="absolute top-8 left-14 font-light tracking-[.6rem] text-slate-100 pointer-events-none">
                 Markalarımız
               </h2>
-            </div>
-            <div className="overflow-hidden w-[45%] h-[110px] bg-black relative">
+            </Link>
+            {/* </Link> */}
+            <Link
+              href="/hakkimizda"
+              className="overflow-hidden cursor-pointer w-[45%] h-[110px] bg-black relative"
+            >
               <Image
                 width="850"
                 height="250"
-                className="opacity-25 -translate-y-20"
+                className="opacity-25 hover:scale-150 duration-1000 -translate-y-20"
                 src={"/images/anasayfa-hakkımızda.jpg"}
               />
-              <h2 className="absolute top-8 left-[65px] font-semibold tracking-[.6rem] text-white">
+              <h2 className="absolute top-8 left-[65px] font-light tracking-[.8rem] text-slate-100 pointer-events-none">
                 Hakkımızda
               </h2>
-            </div>
+            </Link>
           </div>
           <Swiper photos={photos} />
         </div>
