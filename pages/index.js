@@ -33,7 +33,7 @@ export default function Home({ data }) {
                 <Image
                   width="850"
                   height="250"
-                  className="opacity-25 hover:scale-150 duration-1000"
+                  className="opacity-25 hover:scale-150 duration-[3000ms]"
                   src={"/images/anasayfa markalarımız.png"}
                 />
                 <h2 className="absolute top-8 left-[85px] font-light tracking-[.6rem] text-slate-100 pointer-events-none">
@@ -48,7 +48,7 @@ export default function Home({ data }) {
                 <Image
                   width="850"
                   height="250"
-                  className="opacity-25 hover:scale-150 duration-1000 -translate-y-20"
+                  className="opacity-25 hover:scale-150 duration-[3000ms] -translate-y-20"
                   src={"/images/anasayfa-hakkımızda.jpg"}
                 />
                 <h2 className="absolute top-8 left-[95px] font-light tracking-[.8rem] text-slate-100 pointer-events-none">
